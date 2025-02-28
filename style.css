@@ -13,6 +13,16 @@ body {
 header {
     text-align: center;
     margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header img {
+    width: 80px;
+    height: auto;
+    margin-right: 20px;
 }
 
 h1 {
@@ -94,13 +104,13 @@ footer {
     color: #FFD700;
 }
 
-/* Estilos responsivos */
 @media (max-width: 768px) {
-    h1 {
-        font-size: 2rem;
+    header {
+        flex-direction: column;
     }
-    
-    .enlaces-grid {
-        grid-template-columns: 1fr;
+
+    header img {
+        margin-right: 0;
+        margin-bottom: 10px;
     }
 }
